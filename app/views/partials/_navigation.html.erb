@@ -6,12 +6,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <%# if user_signed_in? %>
+        <% if user_signed_in? %>
           <li class="mx-4"><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
-        <%# else %>
+        <% else %>
           <li class="mx-4"><%= link_to "Sign in", new_user_session_path %></li>
           <li class="mx-4"><%= link_to "Sign up", new_user_registration_path %></li>
-        <%# end %>
+        <% end %>
       </ul>
     </div>
   </div>
