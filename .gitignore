@@ -18,8 +18,13 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
-
+# Ignore public files.
 /public/assets
+/public/packs
+/public/packs-test
+/public/uploads
+/public/images
+/node_modules
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
@@ -28,3 +33,16 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Ignore log files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+.byebug_history
+
+# Ignore all test files
+Makefile
+/test/*
+
+# Ignore local storage files
+/storage/*
