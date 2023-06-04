@@ -1,30 +1,33 @@
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        Line number
-      </div>
-      <div class="col">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
-      <div class="col">
-        Author name
-      </div>
-      <div class="col">
-        Create date
-      </div>
-      <div class="col">
-        <button class="btn btn-danger">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-            fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-            <path d="M3 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2
-              2v1H3V4zm2-1a1 1 0 0 0-1 1v1h8V4a1 1 0 0 0-1-1H5zm2
-              5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2zm4
-              0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h2z"/>
-          </svg>
-          Delete
-        </button>
-      </div>
+<%# <div class="my-4">
+  <% if policy(Note).create? %>
+    <%# <%= link_to t('.create'), new_event_path, class: 'btn btn-outline-success' %>
+  <%# <% end %>
+<%# </div> %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      Line number
+    </div>
+    <div class="col">
+      Note body
+      <%# Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. %>
+    </div>
+    <div class="col">
+      Author name
+    </div>
+    <div class="col">
+      Create date
+    </div>
+    <div class="col">
+      <button class="btn btn-danger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+          <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+        </svg>
+        Delete
+      </button>
     </div>
   </div>
+</div>
